@@ -1,0 +1,37 @@
+﻿<div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                @Context.Request.RouteValues["controller"]
+                @Context.Request.RouteValues["action"]
+                @Context.Request.RouteValues["id"]
+                <table class="table table-sm table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Age</th>
+                            <th scope="col">Country</th>
+                            <th scope="col">PhonetNumber</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>@ViewBag.Name</td>
+                            <td>@ViewBag.Surname</td>
+                            <td>@ViewBag.Age</td>
+                            <td>@ViewBag.Country</td>
+                            <td>@ViewBag.PhoneNumber</td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+</div>
